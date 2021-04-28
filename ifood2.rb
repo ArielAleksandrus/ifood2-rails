@@ -252,6 +252,9 @@ class Ifood2
 		
 		ack_events(events)
 	end
+	def fetch_deliverer_json event
+		return event["metadata"]
+	end
 	def poll_events
 		return unless @initted
 
